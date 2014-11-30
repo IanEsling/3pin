@@ -1,0 +1,38 @@
+html {
+    font-family: 'Droid Sans', sans-serif;
+}
+
+@media screen and (orientation: portrait) {
+    .content { max-width: 90%; }
+}
+
+@media screen and (orientation: landscape) {
+    .content { max-height: 90%; }
+}
+
+h1 {
+    font-family: 'Droid Serif', serif;
+}
+
+.content {
+    margin: auto;
+    background: url("../images/mazogs.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    max-width: 80%;
+    top: 10%;
+    left: 10%;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+}
+
+.content:empty
+{
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
